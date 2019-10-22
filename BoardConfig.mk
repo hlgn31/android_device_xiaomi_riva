@@ -109,7 +109,6 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 # GPS
 GNSS_HIDL_LEGACY_MEASURMENTS = true
 LOC_HIDL_VERSION := 3.0
-USE_DEVICE_SPECIFIC_GPS := true
 
 >>>>>>> 53d03dd... riva: gps: Split 2.0 hal and cleanup
 # GPU
