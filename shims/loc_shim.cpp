@@ -12,34 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
  */
 
-cc_library_shared {
-<<<<<<< HEAD
-    name: "libwui",
-    shared_libs: ["libgui_vendor"],
-    vendor: true,
-}
-
-cc_library_shared {
-    name: "libcamera_shim",
-    proprietary: true,
-    defaults: ["hidl_defaults"],
-    srcs: [
-        "camera_shim.cpp",
-    ],
-    cflags: [
-        "-Werror",
-        "-Wextra",
-        "-Wall",
-    ],
-    shared_libs: [
-        "libutils",
-    ],
-=======
-    name: "libloc_shim",
-    proprietary: true,
-    srcs: ["loc_shim.cpp"],
-    vendor: true,
->>>>>>> 6b5877a... riva: Add libloc shim for gnss
+extern "C" {
+    void _ZN8loc_core14LocAdapterBase21reportGnssConfigEventEjRK10GnssConfig() {}
+    void _ZN8loc_core10LocApiBase16reportGnssConfigEjRK10GnssConfig() {}
 }

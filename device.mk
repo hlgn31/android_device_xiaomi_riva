@@ -379,7 +379,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcamera_shim
+    libloc_shim
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
